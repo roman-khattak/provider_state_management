@@ -56,12 +56,15 @@ class Home extends StatelessWidget {
                 ),
 
                 ElevatedButton(
+                  style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.red)),
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) {
                         return const SecondPage();
                       },));
                     },
-                    child: Text("Go to Second Page")),
+                    child: Text("Go to Second Page",style: TextStyle(color: Colors.black),)),
+
+                SizedBox(height: 70,)
               ],
             ),
           ),
